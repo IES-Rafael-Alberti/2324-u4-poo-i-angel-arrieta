@@ -1,3 +1,5 @@
+package pOO_I
+
 class Libro(private var titulo:String, private var autor: String){
     private var cantPaginas:Int = 1
     private var calificacion: Int = 5

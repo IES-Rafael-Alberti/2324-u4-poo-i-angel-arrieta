@@ -1,3 +1,5 @@
+package pOO_I
+
 class Tiempo (var hora: Int){
     var minutos: Int = 0
     var segundos: Int = 0

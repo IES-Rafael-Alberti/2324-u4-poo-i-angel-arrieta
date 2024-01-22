@@ -1,4 +1,6 @@
-class Rectangulo(val base: Double , val altura: Double){
+package pOO_I
+
+class Rectangulo(val base: Double, val altura: Double){
     fun calcArea(): Double{
         return base * altura
     }

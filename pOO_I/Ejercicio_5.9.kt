@@ -1,3 +1,5 @@
+package pOO_I
+
 class Cuenta (private val iban: String, private var saldo: Int){
     init {
         val error: String = "El identificador bancario debe tener 20 dígitos con la estructura:\n" +
