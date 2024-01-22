@@ -1,4 +1,4 @@
-package pOO_I
+package pOO_II
 
 class Libro(private var titulo:String, private var autor: String){
     private var cantPaginas:Int = 1
