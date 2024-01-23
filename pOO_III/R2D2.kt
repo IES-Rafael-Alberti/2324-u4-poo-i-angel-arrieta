@@ -4,7 +4,7 @@ enum class Direccion {
     PositiveY, NegativeY, PositiveX, NegativeX
 }
 
-class Robot(var nombre: String) {
+open class Robot(var nombre: String) {
     init {
         require(nombre.isNotBlank()) { "El nombre del robot no puede estar vacío" }
     }
