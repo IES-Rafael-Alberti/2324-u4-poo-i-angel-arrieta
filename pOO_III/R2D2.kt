@@ -8,11 +8,11 @@ open class Robot(var nombre: String) {
     init {
         require(nombre.isNotBlank()) { "El nombre del robot no puede estar vacío" }
     }
-    private var posX: Int = 0
+    var posX: Int = 0
 
-    private var posY: Int = 0
+    var posY: Int = 0
 
-    private var direccion: Direccion = Direccion.PositiveY
+    var direccion: Direccion = Direccion.PositiveY
 
     fun mover(pasos: Array<Int>) {
         for (paso in pasos) {
@@ -22,11 +22,11 @@ open class Robot(var nombre: String) {
                 Direccion.PositiveY -> posY += paso
                 Direccion.NegativeY -> posY -= paso
             }
-            cambiarDireccion()
+            if (paso > 0) { cambiarDireccion() }
         }
     }
 
-    private fun cambiarDireccion() {
+    open fun cambiarDireccion() {
         direccion = when (direccion) {
             Direccion.PositiveY -> Direccion.NegativeX
             Direccion.NegativeX -> Direccion.NegativeY
